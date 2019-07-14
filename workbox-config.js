@@ -1,6 +1,6 @@
 module.exports = {
-  globDirectory: "dist/",
+  globDirectory: "dist/app/",
   globPatterns: ["**/*.{html,xml,ico,json,js,css,png,yml,jpg,gif}"],
-  swDest: "dist/sw.js",
+  swDest: "dist/app/sw.js",
   importWorkboxFrom: "local"
 };

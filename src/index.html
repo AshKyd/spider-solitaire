@@ -9,6 +9,11 @@
     />
 
     <link rel="stylesheet" type="text/css" href="cards.css" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js");
+      }
+    </script>
     <script type="text/javascript" src="js/languages.js"></script>
     <script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
     <script type="text/javascript" src="js/mousetrap.min.js"></script>
@@ -20,6 +25,38 @@
     <script type="text/javascript" src="js/SpiderGame.js"></script>
     <script type="text/javascript" src="js/SpiderGameView.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="/app/img/icons/chrome/spider-256.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="256x256"
+      href="/img/icons/chrome/spider-256.png"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="128x128"
+      href="/img/icons/chrome/spider-128.png"
+      type="image/png"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-2547771-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-2547771-2");
+    </script>
   </head>
   <body>
     <ul id="toolbar">
